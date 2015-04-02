@@ -2,8 +2,10 @@
 
 import numpy as np
 
+NEURON_COMPONENTS = ('soma', 'axon', 'dendrite', 'synapse')
+
 def mean(x):
-    """Calculate the mean value of an input matrix
+    """Calculate the mean value, plus 1 of an input matrix
 
     Parameters
     ----------
@@ -15,10 +17,10 @@ def mean(x):
     mean : float
         The mean value in the entire array
     """
-    return np.mean(x)
+    return np.mean(x) + 1
 
 def std(x):
-    """Calculate the standard deviation of an input matrix
+    """Calculate the standard deviation, plus 1 of an input matrix
 
     Parameters
     ----------
@@ -30,7 +32,7 @@ def std(x):
     std : float
         The standard deviation of the entire array
     """
-    return np.std(x)
+    return np.std(x) + 1
 
 def cv(x):
     """Calculate the coefficient of variation of an entire array
@@ -51,3 +53,6 @@ def cv(x):
         The coefficient of variation of the entire array
     """
     return mean(x)/std(x)
+
+def is_neuron_component(component):
+    return component in NEURON_COMPONENTS
