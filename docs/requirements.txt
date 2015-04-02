@@ -1,0 +1,4 @@
+Sphinx
+fabric
+sphinx_bootstrap_theme
+pandoc
