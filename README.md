@@ -39,11 +39,44 @@ Get going with contributing to open-source software
 10. You should see your new branch up on your fork's github page.
 
 ## Let's make a real contribution
-1. You can run the test suite by `HOW?`
-2. Comment out the test named `BrokenTest1` by removing the # characters at the beginning of each line in the `BrokenTestCases` file.
-3. Run the tests again and watch it fail.
+1. You can run the test suite by `py.test`
+2. Comment out the test named `test_cv_broken` by removing the # characters at the beginning of each line in the `tests/test_gitgoing.py` file.
+3. Run the tests again and watch it fail. You should see this kind of message:
+
+```
+============================================================================= test session starts ==============================================================================
+platform darwin -- Python 2.7.9 -- py-1.4.25 -- pytest-2.6.3
+plugins: cov
+collected 8 items 
+
+tests/test_gitgoing.py ..F....X
+
+=================================================================================== FAILURES ===================================================================================
+___________________________________________________________________________________ test_cv ____________________________________________________________________________________
+
+x_norm = array([[ -3.78944360e-01,   1.02198073e+00,  -1.18127826e+00,
+         -2.7882...2.19688063e+00,   1.71670354e-01,  -1.37347439e+00,
+          5.33478606e-01]])
+
+    def test_cv(x_norm):
+        from gitgoing.gitgoing import std, mean, cv
+    
+        test_cv = cv(x_norm)
+        true_cv = std(x_norm)/mean(x_norm)
+    
+        # This test will fail
+>       assert test_cv == true_cv
+E       assert 0.51026948757496537 == 1.9597487687387671
+
+tests/test_gitgoing.py:47: AssertionError
+================================================================ 1 failed, 6 passed, 1 xpassed in 0.23 seconds =================================================================
+```
+
 4. Fix the test! Run the tests again and watch it succeed.
-5. Create a pull request back to the original repo that you forked by `HOW?`
+5. Create a pull request back to the original repo that you forked by going to 
+   your `gitgoing` repo website (`github.com/yourgithubusername/gitgoing`),
+   and pressing the green "compare" button next to the branches, which looks 
+   like this: ![](http://i.imgur.com/xKzb8v7.png)
 6. And that's how you contribute to open source software!
 
 ## Additional useful links
