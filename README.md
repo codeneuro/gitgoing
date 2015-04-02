@@ -1,7 +1,14 @@
 # gitgoing
-Learn to use and contribute to open source software
+
+![https://travis-ci.org/codeneuro/gitgoing](https://img.shields.io/travis/codeneuro/gitgoing.svg)![https://pypi.python.org/pypi/gitgoing](https://img.shields.io/pypi/v/gitgoing.svg)
+
+Get going with contributing to open-source software
+
+* Free software: BSD license
+* Documentation: https://gitgoing.readthedocs.org.
 
 ## Setting up your environment
+
 1. Make a github account
 2. Install git on your computer
   * Mac (NOTE: doesn't it come with git? What do we need homebrew for?)
