@@ -37,8 +37,8 @@ Write Documentation
 ~~~~~~~~~~~~~~~~~~~
 
 gitgoing could always use more documentation, whether as part of the
-official gitgoing docs, in docstrings, or even on the web in blog posts,
-articles, and such.
+official gitgoing docs, in docstrings (using [numpydoc style](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt) docstrings), or
+even on the web in blog posts, articles, and such.
 
 Submit Feedback
 ~~~~~~~~~~~~~~~
