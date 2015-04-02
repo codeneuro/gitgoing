@@ -15,20 +15,17 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read().replace('.. :changelog:', '')
 
 requirements = [
-    'wheel',
-    'numpy',
-    'scipy',
-    'matplotlib'
+    # TODO: put package requirements here
 ]
 
 test_requirements = [
-    'pytest'
+    # TODO: put package test requirements here
 ]
 
 setup(
     name='gitgoing',
     version='0.1.0',
-    description="Get going with open-source contributions",
+    description="Get started with open-source contributions",
     long_description=readme + '\n\n' + history,
     author="Olga Botvinnik",
     author_email='olga.botvinnik@gmail.com',

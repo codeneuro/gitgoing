@@ -1,1 +1,5 @@
 wheel==0.23.0
+pytest
+numpy
+scipy
+matplotlib
