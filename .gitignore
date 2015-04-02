@@ -1,0 +1,9 @@
+# Emacs files
+*~
+*#
+
+# Pycharm
+.idea
+
+# Python compiled files
+.pyc
