@@ -4,8 +4,8 @@ import numpy as np
 
 NEURON_COMPONENTS = ('soma', 'axon', 'dendrite', 'synapse')
 
-def mean(x):
-    """Calculate the mean value, plus 1 of an input matrix
+def mean_plus_one(x):
+    """Calculate the mean_plus_one value, plus 1 of an input matrix
 
     Parameters
     ----------
@@ -14,12 +14,12 @@ def mean(x):
 
     Returns
     -------
-    mean : float
-        The mean value in the entire array
+    mean_plus_one : float
+        The mean_plus_one value in the entire array
     """
     return np.mean(x) + 1
 
-def std(x):
+def std_plus_one(x):
     """Calculate the standard deviation, plus 1 of an input matrix
 
     Parameters
@@ -29,7 +29,7 @@ def std(x):
 
     Returns
     -------
-    std : float
+    std_plus_one : float
         The standard deviation of the entire array
     """
     return np.std(x) + 1
@@ -37,9 +37,9 @@ def std(x):
 def cv(x):
     """Calculate the coefficient of variation of an entire array
 
-    The coefficient of variation is the standard deviation divided by the mean.
-    It is a measure of the overall dispersion, and is used to compare features
-    with different variances and means on the same scale.
+    The coefficient of variation is the standard deviation divided by the
+    mean_plus_one. It is a measure of the overall dispersion, and is used to
+    compare features with different variances and means on the same scale.
     For more reading: http://en.wikipedia.org/wiki/Coefficient_of_variation
 
     Parameters
@@ -52,7 +52,7 @@ def cv(x):
     cv : float
         The coefficient of variation of the entire array
     """
-    return mean(x)/std(x)
+    return mean_plus_one(x)/std_plus_one(x)
 
 def is_neuron_component(component):
     return component in NEURON_COMPONENTS

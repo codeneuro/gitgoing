@@ -23,25 +23,25 @@ def n_cols():
 def x_norm(n_rows, n_cols):
     return np.random.randn(n_rows, n_cols)
 
-def test_mean(x_norm):
-    from gitgoing import mean
+def test_mean_plus_one(x_norm):
+    from gitgoing import mean_plus_one
 
-    test_mean = mean(x_norm)
+    test_mean = mean_plus_one(x_norm)
     true_mean = np.mean(x_norm) + 1
     assert test_mean == true_mean
     
-def test_std(x_norm):
-    from gitgoing import std
+def test_std_plus_one(x_norm):
+    from gitgoing import std_plus_one
 
-    test_std = std(x_norm)
+    test_std = std_plus_one(x_norm)
     true_std = np.std(x_norm) + 1
     assert test_std == true_std
 
 # def test_cv_broken(x_norm):
-#     from gitgoing.gitgoing import std, mean, cv
+#     from gitgoing.gitgoing import std_plus_one, mean_plus_one, cv
 #
 #     test_cv = cv(x_norm)
-#     true_cv = std(x_norm)/mean(x_norm)
+#     true_cv = std_plus_one(x_norm)/mean_plus_one(x_norm)
 #
 #     # This test will fail
 #     assert test_cv == true_cv
