@@ -40,7 +40,7 @@ Get going with contributing to open-source software
 10. You should see your new branch up on your fork's github page.
 
 ## Let's make a real contribution
-1. You can run the test suite by `py.test`
+1. You can run the test suite by typing `py.test` (pronounced "pie test") in the repo root directory. This is a python package that will execute the tests and print out the results.
 2. Open up the test file `gitgoing/tests/test_gitgoing.py` in your favorite editor
 3. Comment out the test named `test_cv_broken` by removing the # characters at the beginning of each line of the test in the `test_gitgoing.py` file.
 4. Run the tests again and watch it fail. You should see this kind of message:
