@@ -16,7 +16,7 @@ Get going with contributing to open-source software
     1. Create a folder `~/code` by typing into the terminal `mkdir ~/code`
       * (feel free to use your own code folder if you already have one that you like)
     2. OPTIONAL: Use homebrew http://brew.sh (it's another neat tool!)
-    3. Install by pasting this into your terminal: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+      * Install by pasting this into your terminal: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
   * Windows
     1. Install gitextensions here: http://sourceforge.net/projects/gitextensions/
     2. Create a folder `C:\code` by timping into powershell `mkdir C:\code`
@@ -41,8 +41,9 @@ Get going with contributing to open-source software
 
 ## Let's make a real contribution
 1. You can run the test suite by `py.test`
-2. Comment out the test named `test_cv_broken` by removing the # characters at the beginning of each line in the `tests/test_gitgoing.py` file.
-3. Run the tests again and watch it fail. You should see this kind of message:
+2. Open up the test file `gitgoing/tests/test_gitgoing.py` in your favorite editor
+3. Comment out the test named `test_cv_broken` by removing the # characters at the beginning of each line in the `tests/test_gitgoing.py` file.
+4. Run the tests again and watch it fail. You should see this kind of message:
 
 ```
 ============================================================================= test session starts ==============================================================================
