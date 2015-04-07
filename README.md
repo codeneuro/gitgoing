@@ -1,7 +1,7 @@
 # gitgoing
 
 [![Build Status](https://travis-ci.org/CodeNeuro/gitgoing.png?branch=master)](https://travis-ci.org/CodeNeuro/gitgoing) 
-[![https://pypi.python.org/pypi/gitgoing](https://img.shields.io/pypi/v/gitgoing.svg)
+[![PyPi](https://img.shields.io/pypi/v/gitgoing.svg)](https://pypi.python.org/pypi/gitgoing)
 [![Join the chat at https://gitter.im/CodeNeuro/gitgoing](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/CodeNeuro/gitgoing?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Get going with contributing to open-source software
