@@ -1,6 +1,6 @@
 # gitgoing
 
-![https://travis-ci.org/codeneuro/gitgoing](https://img.shields.io/travis/codeneuro/gitgoing.svg)![https://pypi.python.org/pypi/gitgoing](https://img.shields.io/pypi/v/gitgoing.svg)
+![https://travis-ci.org/CodeNeuro/gitgoing](https://img.shields.io/travis/CodeNeuro/gitgoing.svg)![https://pypi.python.org/pypi/gitgoing](https://img.shields.io/pypi/v/gitgoing.svg)
 
 Get going with contributing to open-source software
 
