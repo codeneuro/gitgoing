@@ -7,7 +7,6 @@ help:
 	@echo "clean-test - remove test and coverage artifacts"
 	@echo "lint - check style with flake8"
 	@echo "test - run tests quickly with the default Python"
-	@echo "test-all - run tests on every Python version with tox"
 	@echo "coverage - check code coverage quickly with the default Python"
 	@echo "docs - generate Sphinx HTML documentation, including API docs"
 	@echo "release - package and upload a release"
@@ -30,7 +29,6 @@ clean-pyc:
 	find . -name '__pycache__' -exec rm -fr {} +
 
 clean-test:
-	rm -fr .tox/
 	rm -f .coverage
 	rm -fr htmlcov/
 
@@ -38,10 +36,7 @@ lint:
 	flake8 gitgoing tests
 
 test:
-	python setup.py test
-
-test-all:
-	tox
+	py.test
 
 coverage:
 	coverage run --source gitgoing setup.py test
