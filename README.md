@@ -15,7 +15,7 @@ Get going with contributing to open-source software
   * Mac
     1. Create a folder `~/code` by typing into the terminal `mkdir ~/code`
       * (feel free to use your own code folder if you already have one that you like)
-    2. OPTIONAL: Use homebrew http://brew.sh (it's another neat tool!)
+    2. OPTIONAL: Use homebrew http://brew.sh (it's a great package manager for installing command line apps!)
       * Install by pasting this into your terminal: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
   * Windows
     1. Install gitextensions here: http://sourceforge.net/projects/gitextensions/
