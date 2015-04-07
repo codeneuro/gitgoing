@@ -18,6 +18,13 @@ Contents:
    authors
    history
 
+.. autosummary::
+    :toctree: generated/
+
+    gitgoing.mean_plus_one
+    gitgoing.std_plus_one
+    gitgoing.cv
+
 Indices and tables
 ==================
 
