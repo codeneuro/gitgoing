@@ -2,7 +2,12 @@
 
 import numpy as np
 
+__all__ = ['mean_plus_one', 'std_plus_one', 'cv', 'is_neuron_component',
+           'NEURON_COMPONENTS']
+
+
 NEURON_COMPONENTS = ('soma', 'axon', 'dendrite', 'synapse')
+
 
 def mean_plus_one(x):
     """Calculate the mean_plus_one value, plus 1 of an input matrix
