@@ -7,6 +7,8 @@ Get going with contributing to open-source software
 * Free software: BSD license
 * Documentation: https://gitgoing.readthedocs.org.
 
+[![Join the chat at https://gitter.im/CodeNeuro/gitgoing](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/CodeNeuro/gitgoing?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Setting up your environment
 
 1. Make a github account
