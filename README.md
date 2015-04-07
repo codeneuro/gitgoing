@@ -42,7 +42,7 @@ Get going with contributing to open-source software
 ## Let's make a real contribution
 1. You can run the test suite by `py.test`
 2. Open up the test file `gitgoing/tests/test_gitgoing.py` in your favorite editor
-3. Comment out the test named `test_cv_broken` by removing the # characters at the beginning of each line in the `tests/test_gitgoing.py` file.
+3. Comment out the test named `test_cv_broken` by removing the # characters at the beginning of each line of the test in the `test_gitgoing.py` file.
 4. Run the tests again and watch it fail. You should see this kind of message:
 
 ```
