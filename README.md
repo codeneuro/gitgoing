@@ -26,6 +26,12 @@ Get going with contributing to open-source software
   * Make sure to use the Python 2.7 version. You can verify that your computer has Python 2.7 by typing `python --version` into your terminal.
 4. Fork this repo by clicking the `Fork` button in the top right corner on the github page for this repo: https://github.com/CodeNeuro/gitgoing
 5. Clone the fork that you just made by clicking the url to clone on the right side of the github page of your fork. Then browse in your terminal to your code folder `cd ~/code` and then type in the clone command: `git clone {url_of_your_fork}`
+6. Move into the folder via `cd gitgoing`, then make sure the clone worked by typing `git status`, and you should see:
+
+```
+On branch master
+Your branch is up-to-date with 'origin/master'.
+```
 
 ## Let's learn Git
 1. Make a change (aka edit) to a file in your cloned repo and save the change locally. Try making a change to this README.md file by adding content to the bottom of it.
@@ -37,6 +43,7 @@ Get going with contributing to open-source software
 7. Type `git branch` to list out the current local branches
 8. Type `git checkout -b {branch_name}` to create a new branch
 9. Make a commit onto the branch, and push the changes up to github.
+   Note: You will need to use the branch name in the push, e.g. if my branch is called `smallchange`, I would push via `git push origin smallchange`
 10. You should see your new branch up on your fork's github page.
 
 ## Let's make a real contribution
@@ -93,7 +100,7 @@ sphinx-build -a . build
 ```
 This creates a set of `.html` files in the folder `build`. If you go into that folder and double-click `index.html`, it should open in a web browser, and you'll see something that looks just like the webpage mentioned above.
 
-Sphinx takes a little bit of configuration, but can automatically genreate a page directly from your Python package, including the documentation you provide for your classes and methods. And you can regenerate the documentation whenever you change the code. This makes it easy to automatically document your project and keep the documentation up to date.
+Sphinx takes a little bit of configuration, but can automatically generate a page directly from your Python package, including the documentation you provide for your classes and methods. And you can regenerate the documentation whenever you change the code. This makes it easy to automatically document your project and keep the documentation up to date.
 
 ## Additional useful links
 http://www.sbf5.com/~cduan/technical/git/
