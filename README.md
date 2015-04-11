@@ -81,12 +81,17 @@ tests/test_gitgoing.py:47: AssertionError
 ================================================================ 1 failed, 6 passed, 1 xpassed in 0.23 seconds =================================================================
 ```
 
-4. Fix the test! Run the tests again and watch it succeed.
-5. Create a pull request back to the original repo that you forked by going to 
+4. Use your new knowledge of `git` to fix the test!
+  1. Create a branch `git checkout -b myfixbringsalltheboystotheyard` 
+  2. Fix the test by editing files, using Sublime text
+  3. Add and commit the changes `git commit -am "fixed test_cv_broken"`
+  4. Push to your new branch `git push origin myfixbringsalltheboystotheyard`
+5.  Run the tests again and watch it succeed.
+6. Create a pull request back to the original repo that you forked by going to 
    your `gitgoing` repo website (`github.com/yourgithubusername/gitgoing`),
    and pressing the green "compare" button next to the branches, which looks 
    like this: ![](http://i.imgur.com/xKzb8v7.png)
-6. And that's how you contribute to open source software!
+7. And that's how you contribute to open source software!
 
 ## Build the documentation
 A key part of any open source project is documenting it! The [sphinx](link) library makes it really easy to add documentation to a project, which you can then host for free on [github pages](link).
@@ -98,6 +103,7 @@ To see where the documentation comes from, you can build it yourself locally. If
 ```
 sphinx-build -a . build
 ```
+
 This creates a set of `.html` files in the folder `build`. If you go into that folder and double-click `index.html`, it should open in a web browser, and you'll see something that looks just like the webpage mentioned above.
 
 Sphinx takes a little bit of configuration, but can automatically generate a page directly from your Python package, including the documentation you provide for your classes and methods. And you can regenerate the documentation whenever you change the code. This makes it easy to automatically document your project and keep the documentation up to date.
