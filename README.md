@@ -17,6 +17,7 @@ Get going with contributing to open-source software
       * (feel free to use your own code folder if you already have one that you like)
     2. OPTIONAL: Use homebrew http://brew.sh (it's a great package manager for installing command line apps!)
       * Install by pasting this into your terminal: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+      * If you don't have `git` installed, type `brew install git` to install it!
   * Windows
     1. Install gitextensions here: http://sourceforge.net/projects/gitextensions/
     2. Create a folder `C:\code` by typing into powershell `mkdir C:\code`
