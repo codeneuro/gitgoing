@@ -65,6 +65,8 @@ Your branch is up-to-date with 'origin/master'.
 
 ## Let's learn Git
 
+First, we'll have a brief chalk-talk overview of what `git` is and how it works.
+
 1. Make a change (aka edit) to a file in your cloned repo and save the change locally. Try making a change to this README.md file by adding content to the bottom of it.
 2. Type `git status` in the terminal to see what's up. Type `git diff` to get a detailed list of differences. Use `j` and `k` to navigate up and down the diff, and `q` to end the diff.
 3. Type `git commit -am "message for the commit"` to create a new commit
