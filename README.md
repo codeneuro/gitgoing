@@ -8,11 +8,13 @@ Get going with contributing to open-source software
 * Free software: BSD license
 * Documentation: https://gitgoing.readthedocs.org.
 
-## Setting up your environment
+## Prerequisistes: Installing Git and Python
 
 1. Make a github account
+2. Create a folder for all your code.
+  * Mac: 
 2. Install git on your computer
-  * Mac
+  * Mac - Comes with git but you can update it if you want via `homebrew`.
     1. Create a folder `~/code` by typing into the terminal `mkdir ~/code`
       * (feel free to use your own code folder if you already have one that you like)
     2. OPTIONAL: Use homebrew http://brew.sh (it's a great package manager for installing command line apps!)
@@ -24,16 +26,72 @@ Get going with contributing to open-source software
       * (feel free to use your own code folder if you already have one that you like)
 3. Install Anaconda Python distribution found here: http://continuum.io/downloads
   * Make sure to use the Python 2.7 version. You can verify that your computer has Python 2.7 by typing `python --version` into your terminal.
-4. Fork this repo by clicking the `Fork` button in the top right corner on the github page for this repo: https://github.com/CodeNeuro/gitgoing
-5. Clone the fork that you just made by clicking the url to clone on the right side of the github page of your fork. Then browse in your terminal to your code folder `cd ~/code` and then type in the clone command: `git clone {url_of_your_fork}`
-6. Move into the folder via `cd gitgoing`, then make sure the clone worked by typing `git status`, and you should see:
+
+## Setting up your environment
+
+"Environments" are sandboxes where you can install python package of specific versions, and then they don't conflict with other versions. They're very helpful if you're testing your software package with different versions of programs like `numpy` or `scipy` but don't want to mess up your own installation.
+
+1. Create a gitgoing-specific `conda` environment by typing at the Terminal (for Mac and Linux) or Anaconda Terminal (for Windows). We'll install `pip` (package to install python packages - yes it's very meta) and `numpy` (matrices in python).
+
+```
+conda create --yes --name gitgoing pip numpy pytest
+```
+You should get output that looks like this:
+```
+Fetching package metadata: ....
+Solving package specifications: ................
+Package plan for installation in environment /Users/olga/anaconda/envs/gitgoing:
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    pytest-2.8.1               |           py27_0         219 KB
+
+The following NEW packages will be INSTALLED:
+
+    numpy:      1.10.1-py27_0
+    openssl:    1.0.2d-0     
+    pip:        7.1.2-py27_0 
+    py:         1.4.30-py27_0
+    pytest:     2.8.1-py27_0 
+    python:     2.7.10-2     
+    readline:   6.2-2        
+    setuptools: 18.4-py27_0  
+    sqlite:     3.8.4.1-1    
+    tk:         8.5.18-0     
+    wheel:      0.26.0-py27_1
+    zlib:       1.2.8-0      
+
+Fetching packages ...
+pytest-2.8.1-p 100% |################################################################################################################################| Time: 0:00:00 639.21 kB/s
+Extracting packages ...
+[      COMPLETE      ]|###################################################################################################################################################| 100%
+Linking packages ...
+[      COMPLETE      ]|###################################################################################################################################################| 100%
+#
+# To activate this environment, use:
+# $ source activate gitgoing
+#
+# To deactivate this environment, use:
+# $ source deactivate
+#
+
+```
+
+2. Let's activate the environment with the instructions above.
+3. Now that we have our environment setup, fork this repo by clicking the `Fork` button in the top right corner on the github page for this repo: https://github.com/CodeNeuro/gitgoing
+4. Clone the fork that you just made by clicking the url to clone on the right side of the github page of your fork. Then browse in your terminal to your code folder `cd ~/code` and then type in the clone command: `git clone https://github.com/yourgithubname/gitgoing`
+5. Move into the folder via `cd gitgoing`, then make sure the clone worked by typing `git status`, and you should see:
 
 ```
 On branch master
 Your branch is up-to-date with 'origin/master'.
 ```
 
+
 ## Let's learn Git
+
 1. Make a change (aka edit) to a file in your cloned repo and save the change locally. Try making a change to this README.md file by adding content to the bottom of it.
 2. Type `git status` in the terminal to see what's up. Type `git diff` to get a detailed list of differences. Use `j` and `k` to navigate up and down the diff, and `q` to end the diff.
 3. Type `git commit -am "message for the commit"` to create a new commit
@@ -50,7 +108,7 @@ Your branch is up-to-date with 'origin/master'.
 
 ## Let's make a real contribution
 1. You can run the test suite by typing `py.test` (pronounced "pie test") in the repo's root directory. This is a python package that will execute the tests and print out the results.
-2. Open up the test file `gitgoing/tests/test_gitgoing.py` in your favorite editor
+2. Open up the test file `tests/test_gitgoing.py` in your favorite editor
 3. Comment out the test named `test_cv_broken` by removing the # characters at the beginning of each line of the test in the `test_gitgoing.py` file.
 4. Run the tests again and watch it fail. You should see this kind of message:
 
@@ -82,7 +140,7 @@ E       assert 0.51026948757496537 == 1.9597487687387671
 tests/test_gitgoing.py:47: AssertionError
 ================================================================ 1 failed, 6 passed, 1 xpassed in 0.23 seconds =================================================================
 ```
-
+  - BONUS: Notice the `@pytest.fixture` "decorator" on the function `x_norm` (in Python, these things above functions are called decorators. If you're familiar with lambda calculus, they are closures). What does this do to the function?
 4. Use your new knowledge of `git` to fix the test!
   1. Create a branch `git checkout -b myfixbringsalltheboystotheyard` 
   2. Fix the test by editing files, using Sublime text
@@ -110,7 +168,21 @@ This creates a set of `.html` files in the folder `build`. If you go into that f
 
 Sphinx takes a little bit of configuration, but can automatically generate a page directly from your Python package, including the documentation you provide for your classes and methods. And you can regenerate the documentation whenever you change the code. This makes it easy to automatically document your project and keep the documentation up to date.
 
-## Additional useful links
+## You're done!
+
+Awesome job! If you want to learn more about 
+
+### Github links
 
 - [Understanding Git Conceptually](http://www.sbf5.com/~cduan/technical/git/)
 - [Think like (a) git](http://think-like-a-git.net/)
+
+### Python packaging
+
+- [Python Packaging User Guide](https://python-packaging-user-guide.readthedocs.org/en/latest/) (crowdsourced, more authoratative)
+- [How to package your Python Code](http://python-packaging.readthedocs.org/en/latest/)
+
+### Pytest links
+
+- [Introduction to Pytest](http://pythontesting.net/framework/pytest/pytest-introduction/)
+- [Official Documentation](http://pytest.org/latest/)
