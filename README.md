@@ -36,14 +36,16 @@ Your branch is up-to-date with 'origin/master'.
 ## Let's learn Git
 1. Make a change (aka edit) to a file in your cloned repo and save the change locally. Try making a change to this README.md file by adding content to the bottom of it.
 2. Type `git status` in the terminal to see what's up. Type `git diff` to get a detailed list of differences. Use `j` and `k` to navigate up and down the diff, and `q` to end the diff.
-3. Type `git commit -am "{message for the commit}"` to create a new commit
+3. Type `git commit -am "message for the commit"` to create a new commit
+  - Look, `git` is teaching you life lessons like overcoming fear of commitment :)
 4. Type `git status` to see what's up.
 5. Type `git push` to push your changes up to the github server.
 6. If you made a change to the README.md file, you should see it changed on your fork's github page.
 7. Type `git branch` to list out the current local branches
-8. Type `git checkout -b {branch_name}` to create a new branch
+8. Type `git checkout -b newbranch` to create a new branch
 9. Make a commit onto the branch, and push the changes up to github.
    Note: You will need to use the branch name in the push, e.g. if my branch is called `smallchange`, I would push via `git push origin smallchange`
+  - BONUS: Make a merge conflict! Make *another* branch and edit the `README.md` file. Now make **another** branch and edit the `README.md` file *on the same line*. Try to push both branches. You should get a merge conflict. This is good. See, git is teaching you yet another life lesson: dealing with conflict!
 10. You should see your new branch up on your fork's github page.
 
 ## Let's make a real contribution
@@ -109,4 +111,6 @@ This creates a set of `.html` files in the folder `build`. If you go into that f
 Sphinx takes a little bit of configuration, but can automatically generate a page directly from your Python package, including the documentation you provide for your classes and methods. And you can regenerate the documentation whenever you change the code. This makes it easy to automatically document your project and keep the documentation up to date.
 
 ## Additional useful links
-http://www.sbf5.com/~cduan/technical/git/
+
+- [Understanding Git Conceptually](http://www.sbf5.com/~cduan/technical/git/)
+- [Think like (a) git](http://think-like-a-git.net/)
