@@ -45,6 +45,9 @@ def cv(x):
     The coefficient of variation is the standard deviation divided by the
     mean_plus_one. It is a measure of the overall dispersion, and is used to
     compare features with different variances and means on the same scale.
+
+    \mu/\sigma
+
     For more reading: http://en.wikipedia.org/wiki/Coefficient_of_variation
 
     Parameters
