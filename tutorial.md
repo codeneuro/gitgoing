@@ -152,6 +152,7 @@ Awesome job! If you want to learn more about
 
 - [Understanding Git Conceptually](http://www.sbf5.com/~cduan/technical/git/)
 - [Think like (a) git](http://think-like-a-git.net/)
+- [Git tutorial from the Cyberwizard Institute](https://github.com/cyberwizardinstitute/workshops/blob/master/git.markdown)
 
 ### Python packaging
 
