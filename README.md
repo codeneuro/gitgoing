@@ -30,3 +30,9 @@ Get going with contributing to open-source software
 ## Tutorial
 
 To get started with the tutorial, click [here](https://github.com/codeneuro/gitgoing/blob/master/tutorial.md).
+
+
+## Data Cleaning tutorial
+
+- [Data zip file](https://dl.dropboxusercontent.com/u/8064404/codeneuro_sf_2015_data_cleaning.zip)
+- [Jupyter notebook (gist)](https://gist.github.com/olgabot/1f42373040b5eefb9bfc)
